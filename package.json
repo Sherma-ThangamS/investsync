@@ -1,0 +1,19 @@
+{
+  "name": "investsync",
+  "private": true,
+  "version": "0.1.0",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.13.9",
+    "tsx": "^4.21.0",
+    "typescript": "^5.8.2"
+  },
+  "scripts": {
+    "build": "npm --prefix packages/domain run build && npm --prefix apps/engine run build && npm --prefix apps/api run build && npm --prefix apps/web run build",
+    "dev": "npm --prefix apps/api run dev",
+    "typecheck": "npm --prefix packages/domain run typecheck && npm --prefix apps/engine run typecheck && npm --prefix apps/api run typecheck && npm --prefix apps/web run typecheck",
+    "lint": "npm --prefix packages/domain run lint && npm --prefix apps/engine run lint && npm --prefix apps/api run lint && npm --prefix apps/web run lint",
+    "test": "npm --prefix packages/domain run test && npm --prefix apps/engine run test && npm --prefix apps/api run test && npm --prefix apps/web run test"
+  }
+}

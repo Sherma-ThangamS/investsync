@@ -1,0 +1,12 @@
+{
+  "name": "@investsync/db",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "echo 'DB package is schema-only in this phase'",
+    "typecheck": "echo 'No TypeScript files in db package'",
+    "lint": "echo 'No lint configured for db'",
+    "test": "echo 'No tests in db package yet'"
+  }
+}
